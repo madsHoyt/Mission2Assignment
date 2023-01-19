@@ -16,6 +16,8 @@ namespace Mission2Assignment
 
             // Set input to numRolls
             int numRolls = Convert.ToInt32(Console.ReadLine());
+
+            // Dice simulator intro
             Console.WriteLine("\nDICE ROLLING SIMULATION RESULTS");
             Console.WriteLine("Each \" * \" represents 1% of the total number of rolls.");
             Console.WriteLine("Total number of rolls = " + numRolls +".\n");
@@ -32,15 +34,18 @@ namespace Mission2Assignment
             // print out totals for dice rolls
             for (int i = 0; i < rollTotals.Length; i++)
             {
+                // Calculate percentage
                 int totalPercent = (int)((rollTotals[i] / (float)numRolls) * 100);
 
                 string starTotal =  "";
 
+                // Create histogram values
                 for (int j=0; j<totalPercent; j++)
                 {
                 starTotal += "*";                
                 }
 
+                // Print
                 Console.WriteLine((i + 2) + ": " + starTotal);
             }
 
