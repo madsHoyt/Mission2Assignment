@@ -12,7 +12,7 @@ namespace Mission2Assignment
 
             // Welcome user to dice throwing simulator
             Console.WriteLine("Welcome to the dice throwing simulator! \n");
-            Console.WriteLine("How many dice rolls would you like to simulate? ");
+            Console.Write("How many dice rolls would you like to simulate? ");
 
             // Set input to numRolls
             int numRolls = Convert.ToInt32(Console.ReadLine());
